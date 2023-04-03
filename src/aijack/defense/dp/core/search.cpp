@@ -11,7 +11,7 @@ namespace py = pybind11;
 
 double _ternary_search(const std::function<double(double)> &f,
                        double left, double right,
-                       std::vector<double> orders,
+                       const std::vector<double> &orders,
                        double precision, int max_iteration = 10000)
 {
     int i = 0;
