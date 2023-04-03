@@ -21,7 +21,7 @@ class PaillierTensor(object):
     """torch.Tensor-like object for Paillier Encryption"""
 
     def __init__(self, paillier_array):
-        if type(paillier_array) == list:
+         if isinstance(paillier_array, list):
             self._paillier_np_array = np.array(paillier_array)
         elif type(paillier_array) == np.ndarray:
             self._paillier_np_array = paillier_array
